@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTEL M FITNESS CENTER</title>
+</head>
+<link rel="stylesheet" href="css\style.css">
+<style>
+    /*css reset*/
+    body{
+        margin:0px;
+        padding:0px;
+        background:url('https://wallpapertag.com/wallpaper/full/f/b/d/143971-new-gym-wallpaper-2560x1600-720p.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .left{
+        display:inline block;
+        color:white;
+
+    position:absolute;
+    top:20px;
+    left: 60px;
+    text-align: center;
+    font-weight:bold ;
+    }
+    .left img{
+        width:123px;
+    }
+    .left div{
+        text-align:center;
+        font-style: bold;
+    }
+    .mid{
+    text-decoration-color:rgb(12, 12, 12);
+   border: 2px solid rgb(245, 245, 241);
+   background-image: url('https://th.bing.com/th/id/OIP.edTT40FLlzSD8I-pMhivzgHaE8?pid=ImgDet&rs=1');
+   display:block;
+   width:55%;
+   margin:20px auto;
+   border-style: double;
+   
+
+    }
+    .right{
+        display:inline-block;
+        color:white;
+
+    position:absolute;
+    right:4px;
+    top:20px;
+    }
+    .navbar{
+        display:inline-block;
+        
+    }
+    .navbar li{
+        display:inline-block;
+        font-size:20px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:34px 23px;
+      
+    }
+    .navbar li a:hover,.navbar li a.active{
+       
+        text-decoration: underline;
+        color:rgb(251, 235, 5);
+        
+      
+    }
+    .btn{
+        margin:0px 9px;
+        background-color: black;
+        color:whitesmoke;
+        text-shadow: 3px;
+        padding:4px 16px;
+        border:2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor:pointer;
+    }
+    .btn:hover{
+        background-color: rgb(255, 5, 113);
+    }
+    .container{
+        border:2px solid rgb(253, 253, 253);
+        color:rgb(232, 244, 232);
+        padding:75px;
+        margin:122px 80px;
+        width: 18%;
+        border-radius:12px;
+        text-align:center;
+        background-image:url('https://th.bing.com/th/id/OIP.edTT40FLlzSD8I-pMhivzgHaE8?pid=ImgDet&rs=1');
+        text-shadow:white;
+        float:left;
+        text-justify: kashida;
+        left:3cm;
+        
+    }
+    .form-group input{
+        text-align:center;
+        display:block;
+        width: 300px;
+        padding: 63px;
+        border:2px solid black;
+        margin:3px auto;
+    }
+   .container2{
+    float:right;
+    background-image: url("https://thumbs.dreamstime.com/z/bmi-body-mass-index-weight-loss-banner-background-bmi-body-mass-index-weight-loss-banner-background-vector-152839543.jpg");
+   }
+
+</style>
+<body>
+    <header class="header">
+        
+    </header>
+   <!-- left box for logo -->
+    <div class="left">
+ <img src="https://images.vexels.com/media/users/3/78494/raw/ee367ff017ceb9e3bc4ad970ac6cbf16-fitness-club-label-logo-template.jpg" alt=" ">
+   
+   
+    <div>FITNESS CLUB</div>
+</div>
+    <!---mid  box for nav bar-->
+    <div class="mid">
+ 
+ <ul class="navbar">
+    <li><a href='http://127.0.0.1:5500/Project%20Gym%20management%20system/index.html/index.html' >Home</a></li>
+    <li><a href='http://127.0.0.1:5500/Project%20Gym%20management%20system/aboutM.html/aboutusM.html'>About Us</a></li>
+    <li><a href='http://127.0.0.1:5500/Project%20Gym%20management%20system/fitness%20calc.html' class="active">Fitness Calculator</a></li>
+    <li><a href='http://127.0.0.1:5500/Project%20Gym%20management%20system/contactus.html/contactus.html'>Contact Us</a></li>
+   
+     </ul>
+    </div>
+    <!-- right box for buttons-->
+    <div class="right">
+  <button class="btn">Call Us Now</button>
+  <button class="btn">Email Us</button>
+ 
+    </div>
+ 
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+
+    
+   <div class="container">
+
+    <div class="card">
+
+
+    <div class="card header text center"> <h2>BMI Calculator </h2>  </div>
+    <div class="card-body">  
+      <form class="w-50 m auto" onsubmit="return False">
+      <div class="form group">
+      <label> Weight:   </label>
+        <input type="number"  name=" "  placeholder="Weight in kg" id="weight" class="form control">
+
+
+      </div>
+      <div class="form group">
+        <label> Height:     </label>
+        <input type="number"  name=" "  placeholder="Height in ft" id="height" class="form control">
+
+
+      </div>
+      <div class="form group">
+        <label>BMI Value:    </label>
+        <input type="number"  name=" " placeholder=" " id="bmivalue" class="form control">
+
+
+      </div>
+      <div>
+     <button type="submit" class="btn btn-success" onclick="getbmivalue()">Check BMI         </button>
+      </div>
+
+        </form>    
+    <div class="card footer text center"> A healthy bmi ranges between 19 and 25   </div>
+    
+    </div>
+  
+    <script>
+          function getbmivalue(){
+        var weight=document.getElementById('weight').value;
+        var height=document.getElementById('height').value;
+        
+        
+      
+         height=height*12;
+         height=height*0.025;  //now height in meteres
+        var newbmivalue=weight  /(height*height);
+        
+        Math.round(newbmivalue);
+        document.getElementById('bmivalue').value=newbmivalue; 
+    }
+ 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+ </div>
+</header>
+</body>
+</html> 
