@@ -248,7 +248,7 @@ Test changes thoroughly
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👥 Authors
-Your Name - @yourusername
+Your Name - Kushagra
 
 Contributors - List of contributors
 
@@ -261,18 +261,7 @@ Inspiration from various gym websites
 
 CSS techniques from MDN Web Docs
 
-📞 Contact & Support
-Issues: GitHub Issues
 
-Email: your.email@example.com
-
-Discord: Join our community
-
-🏆 Show Your Support
-Give a ⭐️ if this project helped you!
-
-📈 Project Status
-Active Development
 https://img.shields.io/badge/Progress-70%2525-blue
 https://img.shields.io/badge/Version-1.0.0-green
 
